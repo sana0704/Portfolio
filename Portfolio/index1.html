@@ -7,24 +7,48 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="section header">
-        <h1><span id="typewriter"></span></h1>
-      </header>
-      
-<!-- About -->
-  <section class="section about">
-    <h2 class="animated-text">About Me</h2>
-    <p class="animated-text">I’m a creative developer passionate about bringing ideas to life through code. From responsive designs to interactive UIs, I aim to create web experiences that are not only functional but also visually engaging and meaningful.</p>
+  <header class="section header">
+    <h1><span id="typewriter"></span></h1>
+  </header>
+  
+  <section class="buttons">
+    <!-- Buttons -->
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+      Hire Me
+    </button>
+  
+    <a href="https://github.com/sana0704" target="_blank" class="btn">
+      Go To GitHub
+    </a>
+  
+    <a href="./Resume_Sananda_Roy.pdf" download class="btn">
+      Download Resume
+    </a>
   </section>
+  
+<!-- About -->
+<section class="section about" id="about">
+  <h2 class="animated-text">About Me</h2>
+  <p class="about-text">
+    I'm <strong>Sananda Roy</strong>, a passionate Full Stack Web Developer with a background in Electronics & Communication. I enjoy building responsive and visually engaging websites that not only look great but also deliver seamless user experiences.
+  </p>
+  <p class="about-text">
+    With a blend of frontend and backend skills — from HTML, CSS, and JavaScript to React, Python, and MySQL — I love transforming ideas into functional and elegant web solutions.
+  </p>
+  <p class="about-text">
+    I'm currently pursuing a Master's in Full Stack Web Development at Itvedant and constantly pushing the boundaries of what I can create with code.
+  </p>
+</section>
+
 
   <section class="section skills" id="skills">
     <h2 class="animated-text">My Skills</h2>
     <div class="skills-container">
       <div class="skill-card">HTML5</div>
       <div class="skill-card">CSS3</div>
+      <div class="skill-card">Bootstrap</div>
       <div class="skill-card">JavaScript</div>
       <div class="skill-card">React</div>
-      <div class="skill-card">Bootstrap</div>
       <div class="skill-card">Python</div>
       <div class="skill-card">MySQL</div>
       <div class="skill-card">Git & GitHub</div>

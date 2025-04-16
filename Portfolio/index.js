@@ -44,18 +44,30 @@ function revealChildren(parent) {
 }
 
 // Scroll listener for all animated sections
+// Scroll listener update
 window.addEventListener("scroll", () => {
+  revealSection(".about", 200);
   revealSection(".skills", 300);
   revealSection(".projects", 400);
   revealSection(".contact", 500);
 });
 
-
+// Optional: trigger reveal on load too
 window.addEventListener("DOMContentLoaded", () => {
+  revealSection(".about", 200);
   revealSection(".skills", 300);
   revealSection(".projects", 400);
   revealSection(".contact", 500);
 });
+
+
+
+
+
+
+
+
+
 
 
 

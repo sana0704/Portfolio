@@ -11,6 +11,7 @@ body {
     padding: 60px 20px;
     text-align: center;
     transition: transform 0.5s ease, background 0.5s ease;
+    cursor: pointer;
   }
   
   .header {
@@ -24,15 +25,45 @@ body {
   }
   
   @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%, 100% { opacity: 1; font-family: cursive;}
+    50% { opacity: 0;font-family: cursive; }
   }
   
   
   .about {
-    background: #D6E3F8;
-    clip-path: circle(80% at 50% 20%);
+    background-color: #fef5ef;
+    padding: 60px 20px;
+    text-align: center;
+    color: #584b53;
   }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #9d5c63;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    /* font-size: 1.1rem; */
+    font-size: larger;
+    font-family: cursive;
+    line-height: 1.8;
+    color: #584b53;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Reveal effect on scroll */
+  .about.visible .about-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  
   
  /* skills */
  .skills {
@@ -268,9 +299,21 @@ body {
     0% { opacity: 0; transform: translateY(10px); }
     100% { opacity: 1; transform: translateY(0); }
   }
+
+  /* button */
+
+  .buttons{
+    display: flex;
+    gap: 20px;
+  }
+  .buttons {
+    text-align: center;
+    margin-top: 30px;
+  }
   
-
-
-
+  .btn {
+    margin: 10px;
+  }
+  
 
 
