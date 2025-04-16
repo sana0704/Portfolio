@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sananda's Portfolio</title>
   <!-- <link rel="stylesheet" href="style.css" /> -->
-   <link rel="stylesheet" href="./Projects/style.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="section header">
-    <h1><span id="typewriter"></span></h1>
+    <h1><span id="typewriter" style="color: #88304E;font-family: cursive;font-size: larger;"></span></h1>
   </header>
   
   <section class="buttons">
     <!-- Buttons -->
-    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+    <button class="btn hirebtn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
       Hire Me
     </button>
   
-    <a href="https://github.com/sana0704" target="_blank" class="btn">
+    <a href="https://github.com/sana0704" target="_blank" class="btn linkbtn">
       Go To GitHub
     </a>
   
-    <a href="./Resume_Sananda_Roy.pdf" download class="btn">
+    <a href="./Resume_Sananda_Roy.pdf" download class="btn linkbtn" >
       Download Resume
     </a>
   </section>
@@ -31,30 +31,48 @@
 <section class="section about" id="about">
   <h2 class="animated-text">About Me</h2>
   <p class="about-text">
-    I'm <strong>Sananda Roy</strong>, a passionate Full Stack Web Developer with a background in Electronics & Communication. I enjoy building responsive and visually engaging websites that not only look great but also deliver seamless user experiences.
+    I'm <strong><mark>Sananda Roy</mark></strong>, a passionate Full Stack Web Developer with a background in Electronics & Communication. I enjoy building responsive and visually engaging websites that not only look great but also deliver seamless user experiences.
   </p>
   <p class="about-text">
-    With a blend of frontend and backend skills — from HTML, CSS, and JavaScript to React, Python, and MySQL — I love transforming ideas into functional and elegant web solutions.
-  </p>
+   <mark> With a blend of frontend and backend skills — from HTML, CSS, and JavaScript to React, Python, and MySQL — I love transforming ideas into functional and elegant web solutions.
+  </p></mark>
   <p class="about-text">
     I'm currently pursuing a Master's in Full Stack Web Development at Itvedant and constantly pushing the boundaries of what I can create with code.
   </p>
 </section>
 
 
-  <section class="section skills" id="skills">
-    <h2 class="animated-text">My Skills</h2>
-    <div class="skills-container">
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">Bootstrap</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">React</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">MySQL</div>
-      <div class="skill-card">Git & GitHub</div>
+<section class="section skills" id="skills">
+  <h2 class="section-title ">My Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card" style="--clr: #E4BB97;">HTML5</div>
+    <div class="skill-card" style="--clr: #8299be;">CSS3</div>
+    <div class="skill-card" style="--clr: #9D5C63;">Bootstrap</div>
+
+        <div class="skill-card js-group" style="--clr: #8d7361;">
+      JavaScript ⚡
+      <div class="sub-skill">ES6+</div>
+      <div class="sub-skill">DOM Manipulation</div>
+      <div class="sub-skill">CallBacks and Promises </div>
+      <div class="sub-skill">Error-Handling</div>
     </div>
-  </section>
+    
+    <div class="skill-card react-group" style="--clr: #90C67C;">
+      React ⚛️
+      <div class="sub-skill">Redux</div>
+      <div class="sub-skill">Recat-Hooks</div>
+      <div class="sub-skill">State Management</div>
+      <div class="sub-skill">React-Router</div>
+    </div>
+
+    <div class="skill-card" style="--clr: #E4BB97;">Python</div>
+    <div class="skill-card" style="--clr: #8194b4;">MySQL</div>
+    <div class="skill-card" style="--clr: #9D5C63;">Git & GitHub</div>
+  </div>
+</section>
+
+
   
 <!-- project -->
   <section class="section projects" id="projects">
@@ -62,8 +80,8 @@
     <div class="projects-container">
       <div class="project-card">
         <h3>Recipe List App</h3>
-        <p>React | API | CSS</p>
-        <a href="https://github.com/sana0704/Recipe-List-React-Project" target="_blank">View Project</a>
+        <p>React | CSS</p>
+        <a href="https://github.com/sana0704/ReactProject1" target="_blank">View Code</a>
       </div>
   
       <div class="project-card">
@@ -75,7 +93,7 @@
       <div class="project-card">
         <h3>Resume Generator</h3>
         <p>HTML | CSS | JavaScript</p>
-        <a href="file:///C:/Users/User/OneDrive/Pictures/Documents/projects/sananda_python/frontend/project1/Projects/resumegenerator/index.html" target="_blank">Live Demo</a>
+        <a href="../Resumegenerator/index.html" target="_blank">Live Demo</a>
       </div>
     </div>
   </section>
@@ -102,6 +120,6 @@
   </section>
   
 
-  <script src="./Projects/index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
